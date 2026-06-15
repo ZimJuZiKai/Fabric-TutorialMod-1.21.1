@@ -1,9 +1,3 @@
-# Tutorial Mod
+## This repo purely exists to document and save my progress with my first minecraft mod!
 
-## Setup
-
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+There is likely nothing of any value for you here if you should somehow stumble upon this repo, unless you find looking at the code of an ammateaur programmer and modder amusing.
