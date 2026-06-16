@@ -14,29 +14,29 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    // First BLock to be added, can be copied for next ones
+    // --- First BLock to be added, can be copied for next ones
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
-    //Second Block with slightly changed parameters
+    // --- Second Block with slightly changed parameters
     public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
             new Block(AbstractBlock.Settings.create().strength(3f)
                     .requiresTool()));
 
-    //Block Helper
+    // --- Block Helper
     private static Block registerBlock(String name , Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, name), block);
     }
 
-    //Block Item Helper
+    // --- Block Item Helper
     private static void registerBlockItem(String name , Block block){
         Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 
-    // Logger messages
+    // --- Logger messages
     public static void registerModBlocks(){
         TutorialMod.LOGGER.info("Registering Mod Blocks for " + TutorialMod.MOD_ID);
 
