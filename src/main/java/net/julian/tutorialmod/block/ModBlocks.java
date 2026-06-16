@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    // --- First BLock to be added, can be copied for next ones
+    // --- First Block to be added, can be copied for next ones
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
             // --- New non-experience dropping block added, check parameters to be added by doing ...create().
             new Block(AbstractBlock.Settings.create()
@@ -47,7 +47,7 @@ public class ModBlocks {
 
     // --- Block registration and Logger location, blocks are added to creative mode groups
     public static void registerModBlocks(){
-        // --- // --- Logger messages , posts custom messages on game startup, Progress update with MOD_ID
+        // --- Logger messages , posts custom messages on game startup, Progress update with MOD_ID
         TutorialMod.LOGGER.info("Registering Mod Blocks for " + TutorialMod.MOD_ID);
 
         // --- added to the tab "Building Blocks"
