@@ -22,7 +22,7 @@ public class ModBlocks {
                     .strength(4f)
                     // --- Tool required or broken by hand
                     .requiresTool()
-                    // --- what sound does it play
+                    // --- what sounds does it play
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     // --- Second Block with slightly changed parameters

@@ -3,6 +3,7 @@ package net.julian.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.julian.tutorialmod.block.ModBlocks;
+import net.julian.tutorialmod.item.ModItemGroups;
 import net.julian.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,10 @@ public class TutorialMod implements ModInitializer {
 	// --- Initialize blocks and items on startup
 	@Override
 	public void onInitialize() {
+		// -- Initialize Item Groups
+		ModItemGroups.registerItemGroups();
+
+		// -- Initialize Items and BLocks
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
